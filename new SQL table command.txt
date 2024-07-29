@@ -1,0 +1,31 @@
+sudo apt-get install python3 -y
+sudo apt-get install python3-boto3 -y
+sudo apt-get install python3-flask -y
+sudo apt-get install mysql-server -y
+sudo apt-get install python3-pymysql -y
+
+git clone https://github.com/Training-demo/aws-code-main
+
+sudo python3 EmpApp.py
+
+create database project;
+show databases;
+use project;
+show tables;
+
+-----------------------------------
+
+
+CREATE TABLE employee (emp_id VARCHAR(20), first_name VARCHAR(20),
+       last_name VARCHAR(20),primary_skills VARCHAR(20), location VARCHAR(20));
+
+-------------------------
+
+
+describe employee;
+
+
+----------insert------------
+
+insert into employee values(1,"Saurav","singh","AWS","BNG");
+
